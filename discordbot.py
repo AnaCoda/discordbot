@@ -19,15 +19,7 @@ jokes = ["What did the green grape say to the purple grape?\nBREATHE STUPID!",
 		"Why does Humpty Dumpty love autumn?\nBecause he had a great fall last year.",
 		"Did you hear about the kidnapping at school today?\nIt's alright, he's awake now.",
 		"Have you heard about the new restaurant Karma?\nThere's no menu, you get what you deserve.", 'Guess the number of programmers it takes to change a light bulb? Zero its a hardware problem','There are only 10 kinds of people in this world: those who know binary and those who don’t.','Real programmers count from 0.', 'Why did the programmer quit his job? Because he didnt get arrays.', 'A foo walks into a bar takes a look around and says Hello World','0 is false 1 is true right? 1','Things arent always #000000 and #FFFFFF.','What is the most used language in programming? Profanity','!False its funny because its True','You had me at Hello World','2b||!2b','Yesterday I changed the name on my wifi to Hack if you can. Today I found it named Challenge Accepted','A programmer is a person who fixed a problem that you didnt know you had in a way you dont understand','How can you tell if a computer geek is an extrovert? They stare at your shoes when you talk instead of their own.','I would love to change the world but they wont give me the source code.','If at first you dont succedd call it version 1.0','Computers make very fast very accurate mistakes','I farted in the Apple store and everyone got mad at me. Not my fault they dont have Windows.','Knock Knock... Whos there? Art... Art Who? R2D2','Hilarious and amazingly true thing: if a pizza has a radius (z) and a depth (a) that pizzas volume can be defined Pi*z*z*a.']
-roasts = [" Go suck a fat dick.",
-		" Even Darcy wouldn't tap your fat ass",
-		" What are you fucking gay?",
-        " You look like a sex doll for Ali-A",
-        " You're so contaminated even Ligma Won't affect you\n\n\n\nLigma balls bitch. :joy::joy::joy:",
-		" Prithy transport thyself to tarnation, bitch",
-		" The only reason you're not dead yet is that disease is afraid to go near you, you sick fuck",
-		" Why did the chicken cross the road? To get the fuck away from you, chicken-raping assfucker."]
-hansonRoast = " Valve's matchmaking must be broken when the equivalent of a monkey messing with a computer can get gold nova three. Hanson's height is just a Pinocchio representation of his giant and fragile ego. Go fuck yourself because nobody else will."
+roasts = [""]
 @bot.event
 async def on_ready():
     print('Logged in as')
@@ -372,4 +364,4 @@ async def yt(ctx, url):
                 player = await vc.create_ytdl_player(url)
                 player.start()
 
-bot.run('NDc1NzM1OTQ1MTExNDA0NTQ0.DkjXmQ.ABS3ku3KIvi3KxNfrnAKE9HR2_E')
+bot.run('nope')
