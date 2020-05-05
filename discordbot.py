@@ -1,5 +1,4 @@
 #http://discordpy.readthedocs.io/en/latest/api.html
-#<discord.member.Member object at 0x0000029EA02B06A8> - member id of bot (i think?) -Suubwey
 
 import discord
 from discord.ext import commands
@@ -19,7 +18,7 @@ jokes = ["What did the green grape say to the purple grape?\nBREATHE STUPID!",
 		"Why does Humpty Dumpty love autumn?\nBecause he had a great fall last year.",
 		"Did you hear about the kidnapping at school today?\nIt's alright, he's awake now.",
 		"Have you heard about the new restaurant Karma?\nThere's no menu, you get what you deserve.", 'Guess the number of programmers it takes to change a light bulb? Zero its a hardware problem','There are only 10 kinds of people in this world: those who know binary and those who don’t.','Real programmers count from 0.', 'Why did the programmer quit his job? Because he didnt get arrays.', 'A foo walks into a bar takes a look around and says Hello World','0 is false 1 is true right? 1','Things arent always #000000 and #FFFFFF.','What is the most used language in programming? Profanity','!False its funny because its True','You had me at Hello World','2b||!2b','Yesterday I changed the name on my wifi to Hack if you can. Today I found it named Challenge Accepted','A programmer is a person who fixed a problem that you didnt know you had in a way you dont understand','How can you tell if a computer geek is an extrovert? They stare at your shoes when you talk instead of their own.','I would love to change the world but they wont give me the source code.','If at first you dont succedd call it version 1.0','Computers make very fast very accurate mistakes','I farted in the Apple store and everyone got mad at me. Not my fault they dont have Windows.','Knock Knock... Whos there? Art... Art Who? R2D2','Hilarious and amazingly true thing: if a pizza has a radius (z) and a depth (a) that pizzas volume can be defined Pi*z*z*a.']
-roasts = [""]
+
 @bot.event
 async def on_ready():
     print('Logged in as')
@@ -124,16 +123,7 @@ async def rolecolour(ctx, hexcode : str):
         print(ctx.message.author.roles[1])
         print(str(hex_int))
         print(str(newColour))"""
-        await bot.edit_role(ctx.message.server, ctx.message.author.roles[1], colour = newColour)
-
-@bot.command(pass_context=True)
-async def bully(ctx, member : discord.Member):
-    if ctx.message.author.server_permissions.manage_server:
-        if "HDMasterReborn#5766" in str(member):
-            await bot.say("{0}{1}".format(member.mention, hansonRoast))
-        else:
-            await bot.say("{0}{1}".format(member.mention, random.choice(roasts)))
-        
+        await bot.edit_role(ctx.message.server, ctx.message.author.roles[1], colour = newColour)        
 
 @bot.command(pass_context=True)
 async def channelinfo(ctx, channel : discord.Channel = None):
